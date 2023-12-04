@@ -5,206 +5,818 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <link rel="stylesheet" href="node_modules/@shower/ribbon/styles/styles.css">
-    <style>
-        .shower {
-            --slide-ratio: calc(16 / 9);
-        }
-    </style>
+	<link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
 </head>
 <body class="shower list">
 
     <header class="caption">
-        <h1>Shower Presentation Engine</h1>
-        <p>Yours Truly, Famous Inc.</p>
+        <h1>Мобильные бизнес-решения интернета вещей на основе протокола MQTT</h1>
+        <p>Подготовил: студент группы ИУ3-31М Щесняк С.С.</p>
     </header>
-
-    <section class="slide" id="cover">
-        <h2>Shower Presentation Engine</h2>
-        <p>Brought to you by <a href="https://pepelsbey.net">Vadim Makeev</a></p>
+	
+	<section class="slide" id="cover_main">
+        <h2>Мобильные<br>бизнес-решения<br>интернета вещей<br>на основе<br>протокола MQTT</h2>
+        <p>Подготовил: студент<br>группы ИУ3-31М<br>Щесняк С.С.</p>
         <figure>
-            <img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
-            <figcaption class="copyright right white">
-                <a href="https://fiftyfootshadows.net">© John Carey</a>
-            </figcaption>
+            <img class="cover" src="pictures/mt21.png">
         </figure>
-        <style>
-            #cover h2 {
-                margin: 30px 0 0;
+		<style>
+            #cover_main h2 {
                 color: white;
-                text-align: center;
-                font-size: 70px;
             }
-
-            #cover p {
-                margin: 10px 0 0;
-                text-align: center;
+			#cover_main p {
                 color: white;
-                font-style: italic;
-                font-size: 20px;
-            }
-
-            #cover p a {
-                color: white;
+				font-size: 24px;
             }
         </style>
+        <!-- Кружок с номером слайда -->
+        <!-- <div class="slide-number">1</div> -->
     </section>
-
-    <section class="slide">
-        <h2>Shower key features</h2>
-        <ol>
-            <li>Built on HTML, CSS and JavaScript</li>
-            <li>Works in all modern browsers</li>
-            <li>Themes are separated from engine</li>
-            <li>Fully keyboard accessible</li>
-            <li>Printable to PDF</li>
+	
+	<section class="slide" id="slide_1">
+        <h2>Содержание</h2>
+		<ol>
+            <li>Введение</li>
+            <li>Формулировка бизнес-кейса</li>
+            <li>Анализ архитектуры системы</li>
+            <li>Выбор технологического стека</li>
+            <li>Анализ ключевых особенностей<br>технических решений</li>
+			<li>Выбор инструментов разработки</li>
+            <li>Решение бизнес-кейса</li>
         </ol>
-        <p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
-    </section>
-
-    <section class="slide">
-        <h2>Plain text on your slides</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
-    </section>
-
-    <section class="slide">
-        <h2>Two columns if you like</h2>
-        <div class="columns two">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-        </div>
-    </section>
-
-    <section class="slide">
-        <h2>All kind of lists</h2>
-        <ol>
-            <li>Simple lists are marked with bullets</li>
-            <li>Ordered lists begin with a number</li>
-            <li>You can even nest lists one inside another
-                <ul>
-                    <li>Or mix their types</li>
-                    <li>But do not go too far</li>
-                    <li>Otherwise audience will be bored</li>
-                </ul>
-            </li>
-            <li>Look, seven rows exactly!</li>
-        </ol>
-    </section>
-
-    <section class="slide">
-        <h2>Serious citations</h2>
+		<p class="footer-start">27 ноября 2023</p>
+		<div style="bottom: 10px"></div>
+		<p class="footer-middle">МОБИЛЬНЫЕ БИЗНЕС-РЕШЕНИЯ ИНТЕРНЕТА<br>ВЕЩЕЙ НА ОСНОВЕ ПРОТОКОЛА MQTT</p>
+		<p class="footer-end">2</p>
         <figure>
-            <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-            </blockquote>
-            <figcaption>Marcus Tullius Cicero</figcaption>
+            <img class="cover" src="pictures/mt22.png">
         </figure>
-    </section>
-
-    <section class="slide">
-        <h2>Code samples</h2>
-        <pre>
-            <code>&lt;!DOCTYPE html&gt;</code>
-            <code class="mark">&lt;html lang="en"&gt;</code>
-            <code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-            <code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-            <code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-            <code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-            <code><mark>&lt;/head&gt;</mark></code>
-        </pre>
-    </section>
-
-    <section class="slide">
-        <h2>Even tables</h2>
-        <table>
-        <tr>
-            <th scope="col">Locavore</th>
-            <th>Umami</th>
-            <th>Helvetica</th>
-            <th>Vegan</th>
-        </tr>
-        <tr>
-            <th scope="row">Fingerstache</th>
-            <td>Kale</td>
-            <td>Chips</td>
-            <td>Keytar</td>
-        </tr>
-        <tr>
-            <th scope="row">Sriracha</th>
-            <td>Gluten-free</td>
-            <td>Ennui</td>
-            <td>Keffiyeh</td>
-        </tr>
-        <tr>
-            <th scope="row">Thundercats</th>
-            <td>Jean</td>
-            <td>Shorts</td>
-            <td>Biodiesel</td>
-        </tr>
-        <tr>
-            <th scope="row">Terry</th>
-            <td>Richardson</td>
-            <td>Swag</td>
-            <td>Blog</td>
-        </tr>
-        </table>
-        <p>It’s good to have information organized.</p>
-    </section>
-
-    <section class="slide" id="picture">
-        <h2>Pictures</h2>
-        <figure>
-            <img class="cover" src="pictures/picture.jpg" alt="Orange typewriter on a wooden table close-up">
-            <figcaption class="copyright right white">
-                <a href="https://fiftyfootshadows.net">© John Carey</a>
-            </figcaption>
-        </figure>
-        <style>
-            #picture h2 {
+		<style>
+            #slide_1 h2 {
                 color: white;
+				margin-top: 20px;
+				font-size: 44px;
+            }
+			#slide_1 ol li {
+				color: white;
+				font-size: 20px;
+				margin: 0px;
+            }
+			#slide_1 ol li:before {
+                color: white;
+				padding-bottom: 50px;
+            }
+			.footer-start{
+                color: white;
+				font-size: 12px;
+				font-style: bold;
+				position: fixed;
+				bottom: 10px;
+				left: 50px;
+            }
+			.footer-middle {
+				color: white;
+				font-size: 10px;
+				margin: 0px;
+				display: flex; /* Используем flex-контейнер */
+				justify-content: center; /* Выравниваем по горизонтали по центру */
+				text-align: center;
+				bottom: 10px;
+            }
+			.footer-end {
+                color: white;
+				font-size: 12px;
+				font-style: bold;
+				position: fixed;
+				bottom: 10px;
+				right: 50px;
             }
         </style>
+        <!-- Кружок с номером слайда -->
+        <!-- <div class="slide-number">1</div> -->
     </section>
-
-    <section class="slide">
-        <h2 class="shout shrink">You can even shout this way</h2>
-    </section>
-
-    <section class="slide">
-        <h2>Inner navigation</h2>
-        <ol>
-            <li>Lets you reveal list items one by one</li>
-            <li class="next">To keep some key points</li>
-            <li class="next">In secret from audience</li>
-            <li class="next">But it will work only once</li>
-            <li class="next">Nobody wants to see the same joke twice</li>
-        </ol>
-    </section>
-
-    <section class="slide" id="see-more">
-        <h2 class="shout">
-            <img src="pictures/logo.svg" alt="Shower logo">
-            <a href="https://github.com/shower/shower">See more on GitHub</a>
-        </h2>
-        <style>
-            #see-more h2 {
-                font-size: 100px
+	
+	<section class="slide" id="slide_2">
+        <h2>Введение</h2>
+		<div style="margin-top: -20px; padding-bottom: 0px">
+			<ul>
+				<li class="large-ul">Число умных устройств увеличилось в 5 раз за<br>последние 10 лет (ежегодный прирост ~25%);</li>
+				<li class="large-ul">Ключевые проблемы:
+				<ul>
+					<li class="small-ul">	Архитектура систем</li>
+					<li class="small-ul">	Разработка стека веб-протоколов</li>
+					<li class="small-ul">	Масштабирование</li>
+					<li class="small-ul">	Гарантированное качество обслуживания</li>
+					<li class="small-ul">	Безопасность</li>
+				</ul>
+				</li>
+				<li class="large-ul">Решение – IoT (1999, Кевин Эштон)</li>
+				<li class="large-ul">Аналитическая платформа – мобильное<br>приложение.</li>
+				<li class="large-ul">Ключевые преимущества:
+				<ul>
+					<li class="small-ul">Доступность</li>
+					<li class="small-ul">Переносимость</li>
+				</ul>
+				</li>
+			</ul>
+		</div>
+		
+		<p class="footer-start">27 ноября 2023</p>
+		<p class="footer-middle">МОБИЛЬНЫЕ БИЗНЕС-РЕШЕНИЯ ИНТЕРНЕТА<br>ВЕЩЕЙ НА ОСНОВЕ ПРОТОКОЛА MQTT</p>
+		<p class="footer-end">3</p>
+        <figure>
+            <img class="cover" src="pictures/mt23.png">
+        </figure>
+		<style>
+			.large-ul {
+				font-size: 15px;
+			}
+			.small-ul {
+				font-size: 10px;
+			}
+            #slide_2 h2 {
+                color: white;
+				margin-top: 20px;
+				font-size: 44px;
             }
-
-            #see-more img {
-                width: 0.72em;
-                height: 0.72em;
+			#slide_2 ul li {
+				color: white;
+            }
+			#slide_2 ul li:before {
+                color: white;
+				padding-bottom: 50px;
+            }
+			.footer-start{
+                color: white;
+				font-size: 12px;
+				font-style: bold;
+				position: fixed;
+				bottom: 10px;
+				left: 60px;
+            }
+			.footer-middle {
+				color: white;
+				font-size: 10px;
+				display: flex; /* Используем flex-контейнер */
+				justify-content: center; /* Выравниваем по горизонтали по центру */
+				text-align: center;
+            }
+			.footer-end {
+                color: white;
+				font-size: 12px;
+				font-style: bold;
+				position: fixed;
+				bottom: 10px;
+				right: 60px;
             }
         </style>
+        <!-- Кружок с номером слайда -->
+        <!-- <div class="slide-number">1</div> -->
+    </section>
+	
+	<section class="slide" id="slide_3">
+        <h2>Бизнес-кейс</h2>
+		<div style="margin-top: -20px; padding-bottom: 100px">
+			<ul>
+				<li class="large-ul"><u><strong>Что?</strong></u> ПО мониторинга КГ АО «ОЭК» г. Москва для установки на мобильное<br>устройство с ОС Android.</li>
+				<li class="large-ul"><u><strong>Зачем?</strong></u> Отображение текущего состояния КГ АО «ОЭК»,<br>установленных в г. Москва.</li>
+				<li class="large-ul"><u><strong>Как?</strong></u> ПО должно предоставлять возможность выбора следующих<br>способов вывода информации о КГ:
+				<ul>
+					<li class="small-ul">	Таблица</li>
+					<li class="small-ul">	Карта</li>
+					<li class="small-ul">	Дашборд</li>
+				</ul>
+				</li>
+			</ul>
+		</div>
+		
+		<p class="footer-start">27 ноября 2023</p>
+		<p class="footer-middle">МОБИЛЬНЫЕ БИЗНЕС-РЕШЕНИЯ ИНТЕРНЕТА<br>ВЕЩЕЙ НА ОСНОВЕ ПРОТОКОЛА MQTT</p>
+		<p class="footer-end">4</p>
+        <figure>
+            <img class="cover" src="pictures/mt24.png">
+        </figure>
+		<style>
+			.large-ul {
+				font-size: 15px;
+			}
+			.small-ul {
+				font-size: 10px;
+			}
+            #slide_3 h2 {
+                color: white;
+				margin-top: 20px;
+				font-size: 44px;
+            }
+			#slide_3 ul li {
+				color: white;
+            }
+			#slide_3 ul li:before {
+                color: white;
+				padding-bottom: 100px;
+            }
+			.footer-start{
+                color: white;
+				font-size: 12px;
+				font-style: bold;
+				position: fixed;
+				bottom: 10px;
+				left: 60px;
+            }
+			.footer-middle {
+				color: white;
+				font-size: 10px;
+				display: flex; /* Используем flex-контейнер */
+				justify-content: center; /* Выравниваем по горизонтали по центру */
+				text-align: center;
+            }
+			.footer-end {
+                color: white;
+				font-size: 12px;
+				font-style: bold;
+				position: fixed;
+				bottom: 10px;
+				right: 60px;
+            }
+        </style>
+        <!-- Кружок с номером слайда -->
+        <!-- <div class="slide-number">1</div> -->
+    </section>
+	
+	<section class="slide" id="slide_4">
+        <h2>Структура IoT-<br>платформы</h2>
+		<div style="margin-top: -20px; padding-bottom: 0px">
+			<ul>
+				<li class="large-ul">Mote – оконечное устройство, КГ</li>
+				<li class="large-ul">Base Station – базовая станция</li>
+				<li class="large-ul">Network Server (NS) - для настройки параметров<br>радиопередачи по каналам Ethernet и LoRaWAN и<br>аутентификации пакетов</li>
+				<li class="large-ul">Application Server (AS) - для шифрования и<br>расшифрования пакетов</li>
+				<li class="large-ul">Customer Server (CS) - для парсинга данных в целях<br>объединения в структуры для обработки, хранения<br>и передачи</li>
+			</ul>
+		</div>
+		
+		<p class="footer-start">27 ноября 2023</p>
+		<p class="footer-middle">МОБИЛЬНЫЕ БИЗНЕС-РЕШЕНИЯ ИНТЕРНЕТА<br>ВЕЩЕЙ НА ОСНОВЕ ПРОТОКОЛА MQTT</p>
+		<p class="footer-end">5</p>
+        <figure>
+            <img class="cover" src="pictures/mt25.png">
+        </figure>
+		<style>
+			.large-ul {
+				font-size: 15px;
+			}
+			.small-ul {
+				font-size: 10px;
+			}
+            #slide_4 h2 {
+                color: white;
+				margin-top: 20px;
+				font-size: 44px;
+            }
+			#slide_4 ul li {
+				color: white;
+            }
+			#slide_4 ul li:before {
+                color: white;
+				padding-bottom: 50px;
+            }
+			.footer-start{
+                color: white;
+				font-size: 12px;
+				font-style: bold;
+				position: fixed;
+				bottom: 10px;
+				left: 60px;
+            }
+			.footer-middle {
+				color: white;
+				font-size: 10px;
+				display: flex; /* Используем flex-контейнер */
+				justify-content: center; /* Выравниваем по горизонтали по центру */
+				text-align: center;
+            }
+			.footer-end {
+                color: white;
+				font-size: 12px;
+				font-style: bold;
+				position: fixed;
+				bottom: 10px;
+				right: 60px;
+            }
+        </style>
+        <!-- Кружок с номером слайда -->
+        <!-- <div class="slide-number">1</div> -->
+    </section>
+	
+	<section class="slide" id="slide_5">
+	<h2>Выбор протокола</h2>
+		<div style="margin-top: -20px; padding-bottom: 80px">
+			<ul>
+				<li class="large-ul">Критерии:
+					<ul>
+						<li class="small-ul">	Надежность</li>
+						<li class="small-ul">	Энергоэффективность</li>
+						<li class="small-ul">	Защищенность</li>
+						<li class="small-ul">	Скорость реакции на события</li>
+						<li class="small-ul">	Возможность группового управления</li>
+						<li class="small-ul">	Простота реализации</li>
+					</ul>
+				</li>
+				<li class="large-ul">CoAP – ненадежен и не энергоэффективен, медленно реагирует на<br>события</li>
+				<li class="large-ul">HTTP – ненадежен и не энергоэффективен, нет группового управления</li>
+				<li class="large-ul">MQTT – оптимальное решение</li>
+			</ul>
+		</div>
+		
+		<p class="footer-start">27 ноября 2023</p>
+		<p class="footer-middle">МОБИЛЬНЫЕ БИЗНЕС-РЕШЕНИЯ ИНТЕРНЕТА<br>ВЕЩЕЙ НА ОСНОВЕ ПРОТОКОЛА MQTT</p>
+		<p class="footer-end">6</p>
+        <figure>
+            <img class="cover" src="pictures/mt26.png">
+        </figure>
+		<style>
+			.large-ul {
+				font-size: 15px;
+			}
+			.small-ul {
+				font-size: 10px;
+			}
+            #slide_5 h2 {
+                color: white;
+				margin-top: 20px;
+				font-size: 44px;
+            }
+			#slide_5 ul li {
+				color: white;
+            }
+			#slide_5 ul li:before {
+                color: white;
+				padding-bottom: 50px;
+            }
+			.footer-start{
+                color: white;
+				font-size: 12px;
+				font-style: bold;
+				position: fixed;
+				bottom: 10px;
+				left: 60px;
+            }
+			.footer-middle {
+				color: white;
+				font-size: 10px;
+				display: flex; /* Используем flex-контейнер */
+				justify-content: center; /* Выравниваем по горизонтали по центру */
+				text-align: center;
+            }
+			.footer-end {
+                color: white;
+				font-size: 12px;
+				font-style: bold;
+				position: fixed;
+				bottom: 10px;
+				right: 60px;
+            }
+        </style>
+        <!-- Кружок с номером слайда -->
+        <!-- <div class="slide-number">1</div> -->
+    </section>
+	
+	<section class="slide" id="slide_6">
+	<h2>MQTT</h2>
+		<div style="margin-top: -20px; padding-bottom: 140px">
+			<ul>
+				<li class="large-ul"><strong>MQTT</strong> – Message Queueing Telemetry Transport</li>
+				<li class="large-ul">Предназначен для сетей с <strong>ограниченными ресурсами</strong><br> и пропускной способностью</li>
+				<li class="large-ul"><strong>1999 г</strong>, создан для нефтегазовой промышленности</li>
+				<li class="large-ul"><strong>Вопросы</strong>:
+					<ul>
+						<li class="small-ul">	Каков принцип работы MQTT?</li>
+						<li class="small-ul">	Каковы компоненты MQTT?</li>
+						<li class="small-ul">	Как работает MQTT?</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		
+		<p class="footer-start">27 ноября 2023</p>
+		<p class="footer-middle">МОБИЛЬНЫЕ БИЗНЕС-РЕШЕНИЯ ИНТЕРНЕТА<br>ВЕЩЕЙ НА ОСНОВЕ ПРОТОКОЛА MQTT</p>
+		<p class="footer-end">7</p>
+        <figure>
+            <img class="cover" src="pictures/mt27.png">
+        </figure>
+		<style>
+			.large-ul {
+				font-size: 15px;
+			}
+			.small-ul {
+				font-size: 10px;
+			}
+            #slide_6 h2 {
+                color: white;
+				margin-top: 20px;
+				font-size: 44px;
+            }
+			#slide_6 ul li {
+				color: white;
+            }
+			#slide_6 ul li:before {
+                color: white;
+				padding-bottom: 50px;
+            }
+			.footer-start{
+                color: white;
+				font-size: 12px;
+				font-style: bold;
+				position: fixed;
+				bottom: 10px;
+				left: 60px;
+            }
+			.footer-middle {
+				color: white;
+				font-size: 10px;
+				display: flex; /* Используем flex-контейнер */
+				justify-content: center; /* Выравниваем по горизонтали по центру */
+				text-align: center;
+            }
+			.footer-end {
+                color: white;
+				font-size: 12px;
+				font-style: bold;
+				position: fixed;
+				bottom: 10px;
+				right: 60px;
+            }
+        </style>
+        <!-- Кружок с номером слайда -->
+        <!-- <div class="slide-number">1</div> -->
+    </section>
+	
+	<section class="slide" id="slide_7">
+	<h2>Преимущества MQTT</h2>
+		<div style="margin-top: -20px; padding-bottom: 200px">
+			<ul>
+				<li class="large-ul">Легкость и эффективность</li>
+				<li class="large-ul">Масштабируемость</li>
+				<li class="large-ul">Надежность</li>
+				<li class="large-ul">Безопасность</li>
+				<li class="large-ul">Хорошая поддержка</li>
+			</ul>
+		</div>
+		
+		<p class="footer-start">27 ноября 2023</p>
+		<p class="footer-middle">МОБИЛЬНЫЕ БИЗНЕС-РЕШЕНИЯ ИНТЕРНЕТА<br>ВЕЩЕЙ НА ОСНОВЕ ПРОТОКОЛА MQTT</p>
+		<p class="footer-end">8</p>
+        <figure>
+            <img class="cover" src="pictures/mt28.png">
+        </figure>
+		<style>
+			.large-ul {
+				font-size: 15px;
+			}
+			.small-ul {
+				font-size: 10px;
+			}
+            #slide_7 h2 {
+                color: white;
+				margin-top: 20px;
+				font-size: 44px;
+            }
+			#slide_7 ul li {
+				color: white;
+            }
+			#slide_7 ul li:before {
+                color: white;
+				padding-bottom: 50px;
+            }
+			.footer-start{
+                color: white;
+				font-size: 12px;
+				font-style: bold;
+				position: fixed;
+				bottom: 10px;
+				left: 60px;
+            }
+			.footer-middle {
+				color: white;
+				font-size: 10px;
+				display: flex; /* Используем flex-контейнер */
+				justify-content: center; /* Выравниваем по горизонтали по центру */
+				text-align: center;
+            }
+			.footer-end {
+                color: white;
+				font-size: 12px;
+				font-style: bold;
+				position: fixed;
+				bottom: 10px;
+				right: 60px;
+            }
+        </style>
+        <!-- Кружок с номером слайда -->
+        <!-- <div class="slide-number">1</div> -->
     </section>
 
-    <footer class="badge">
-        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
-    </footer>
-
-    <div class="progress"></div>
+    <section class="slide" id="slide_8">
+	<h2>Выбор инструментов<br>разработки</h2>
+		<div style="margin-top: -20px; padding-bottom: 180px">
+			<ul>
+				<li class="large-ul">MVVM – выбранный шаблон проектирования архитектуры</li>
+				<li class="large-ul"><strong>Основные библиотеки:</strong>:
+					<ul>
+						<li class="small-ul">	Room – работа с БД</li>
+						<li class="small-ul">	Dagger/Hilt – инъекция зависимостей</li>
+						<li class="small-ul">	Paho-MQTT – реализация клиента</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		
+		<p class="footer-start">27 ноября 2023</p>
+		<p class="footer-middle">МОБИЛЬНЫЕ БИЗНЕС-РЕШЕНИЯ ИНТЕРНЕТА<br>ВЕЩЕЙ НА ОСНОВЕ ПРОТОКОЛА MQTT</p>
+		<p class="footer-end">9</p>
+        <figure>
+            <img class="cover" src="pictures/mt29.png">
+        </figure>
+		<style>
+			.large-ul {
+				font-size: 15px;
+			}
+			.small-ul {
+				font-size: 10px;
+			}
+            #slide_8 h2 {
+                color: white;
+				margin-top: 20px;
+				font-size: 44px;
+            }
+			#slide_8 ul li {
+				color: white;
+            }
+			#slide_8 ul li:before {
+                color: white;
+				padding-bottom: 50px;
+            }
+			.footer-start{
+                color: white;
+				font-size: 12px;
+				font-style: bold;
+				position: fixed;
+				bottom: 10px;
+				left: 60px;
+            }
+			.footer-middle {
+				color: white;
+				font-size: 10px;
+				display: flex; /* Используем flex-контейнер */
+				justify-content: center; /* Выравниваем по горизонтали по центру */
+				text-align: center;
+            }
+			.footer-end {
+                color: white;
+				font-size: 12px;
+				font-style: bold;
+				position: fixed;
+				bottom: 10px;
+				right: 60px;
+            }
+        </style>
+        <!-- Кружок с номером слайда -->
+        <!-- <div class="slide-number">1</div> -->
+    </section>
+	
+	<section class="slide" id="slide_9">
+	<h2>Решение бизнес-кейса</h2>
+		<div style="margin-top: -20px; padding-bottom: 250px">
+			<h3 class="header-start">Таблица</h3>
+			<h3 class="header-middle">Карта</h3>
+			<h3 class="header-end">Дашборд</h3>
+		</div>
+		
+		<p class="footer-start">27 ноября 2023</p>
+		<p class="footer-middle">МОБИЛЬНЫЕ БИЗНЕС-РЕШЕНИЯ ИНТЕРНЕТА<br>ВЕЩЕЙ НА ОСНОВЕ ПРОТОКОЛА MQTT</p>
+		<p class="footer-end">10</p>
+        <figure>
+            <img class="cover" src="pictures/mt210.png">
+        </figure>
+		<style>
+			.large-ul {
+				font-size: 15px;
+			}
+			.small-ul {
+				font-size: 10px;
+			}
+            #slide_9 h2 {
+                color: white;
+				margin-top: 20px;
+				font-size: 44px;
+				display: flex; /* Используем flex-контейнер */
+				justify-content: center; /* Выравниваем по горизонтали по центру */
+				text-align: center;
+            }
+			#slide_9 h3 {
+                color: white;
+				margin-top: 20px;
+				font-size: 36px;
+            }
+			#slide_9 ul li {
+				color: white;
+            }
+			#slide_9 ul li:before {
+                color: white;
+				padding-bottom: 50px;
+            }
+			.footer-start{
+                color: white;
+				font-size: 12px;
+				font-style: bold;
+				position: fixed;
+				bottom: 10px;
+				left: 60px;
+            }
+			.footer-middle {
+				color: white;
+				font-size: 10px;
+				display: flex; /* Используем flex-контейнер */
+				justify-content: center; /* Выравниваем по горизонтали по центру */
+				text-align: center;
+            }
+			.footer-end {
+                color: white;
+				font-size: 12px;
+				font-style: bold;
+				position: fixed;
+				bottom: 10px;
+				right: 60px;
+            }
+			.header-start{
+                color: white;
+				font-size: 36px;
+				font-style: bold;
+				position: fixed;
+				top: 130px;
+				left: 100px;
+            }
+			.header-middle {
+				color: white;
+				font-size: 36x;
+				display: flex; /* Используем flex-контейнер */
+				justify-content: center; /* Выравниваем по горизонтали по центру */
+				text-align: center;
+            }
+			.header-end {
+                color: white;
+				font-size: 36x;
+				font-style: bold;
+				position: fixed;
+				top: 130px;
+				right: 100px;
+            }
+        </style>
+        <!-- Кружок с номером слайда -->
+        <!-- <div class="slide-number">1</div> -->
+    </section>
+	
+	<section class="slide" id="slide_10">
+	<h2>Спасибо<br>за<br>внимание</h2>
+	<p class="footer">Вопросы?</p>
+		
+        <figure>
+            <img class="cover" src="pictures/mt211.png">
+        </figure>
+		<style>
+			.large-ul {
+				font-size: 15px;
+			}
+			.small-ul {
+				font-size: 10px;
+			}
+            #slide_10 h2 {
+                color: white;
+				position: fixed;
+				top: 180px;
+				left: 260px;
+				font-size: 60px;
+				text-align: center;
+            }
+			.footer{
+                color: white;
+				font-size: 36px;
+				position: fixed;
+				top: 370px;
+				left: 285px;
+            }
+			.footer-middle {
+				color: white;
+				font-size: 10px;
+				display: flex; /* Используем flex-контейнер */
+				justify-content: center; /* Выравниваем по горизонтали по центру */
+				text-align: center;
+            }
+			.footer-end {
+                color: white;
+				font-size: 12px;
+				font-style: bold;
+				position: fixed;
+				bottom: 10px;
+				right: 60px;
+            }
+			.header-start{
+                color: white;
+				font-size: 36px;
+				font-style: bold;
+				position: fixed;
+				top: 130px;
+				left: 100px;
+            }
+			.header-middle {
+				color: white;
+				font-size: 36x;
+				display: flex; /* Используем flex-контейнер */
+				justify-content: center; /* Выравниваем по горизонтали по центру */
+				text-align: center;
+            }
+			.header-end {
+                color: white;
+				font-size: 36x;
+				font-style: bold;
+				position: fixed;
+				top: 130px;
+				right: 100px;
+            }
+        </style>
+        <!-- Кружок с номером слайда -->
+        <!-- <div class="slide-number">1</div> -->
+    </section>
+	
+	<section class="slide" id="slide_11">
+	<h2>Источники</h2>
+		<div style="margin-top: -20px; padding-bottom: 140px">
+			<ul>
+				<li class="large-ul"><a href="https://aws.amazon.com/ru/what-is/mqtt/">https://aws.amazon.com/ru/what-is/mqtt/</a></li>
+				<li class="large-ul"><a href="https://ipc2u.ru/articles/prostye-resheniya/chto-takoe-mqtt/">https://ipc2u.ru/articles/prostye-resheniya/chto-takoe-mqtt/</a></li>
+				<li class="large-ul"><a href="https://habr.com/ru/articles/479890/Надежность">https://habr.com/ru/articles/479890/Надежность</a></li>
+				<li class="large-ul"><a href="https://www.gartner.com/en/articles/what-s-new-in-the-2023-gartner-hype-cycle-for-emerging-technologies">https://www.gartner.com/en/articles/what-s-new-in-the-2023-gartner-hype-cycle-for-emerging-technologies</a></li>
+				<li class="large-ul"><a href="https://www.researchgate.net/figure/Comparison-of-CoAP-MQTT-and-HTTP-REST_tbl1_320932175">https://www.researchgate.net/figure/Comparison-of-CoAP-MQTT-and-HTTP-REST_tbl1_320932175</a></li>
+				<li class="large-ul"><a href="https://www.researchgate.net/figure/PERFORMANCE-RELIABILITY-COMPARISON-OF-MQTT-AND-HTTP-ON-TYPICAL-MOBILE-APPLICATION-10_tbl5_317067463">https://www.researchgate.net/figure/PERFORMANCE-RELIABILITY-COMPARISON-OF-MQTT-AND-HTTP-ON-TYPICAL-MOBILE-APPLICATION-10_tbl5_317067463</a></li>
+			</ul>
+		</div>
+		
+		<p class="footer-start">27 ноября 2023</p>
+		<p class="footer-middle">МОБИЛЬНЫЕ БИЗНЕС-РЕШЕНИЯ ИНТЕРНЕТА<br>ВЕЩЕЙ НА ОСНОВЕ ПРОТОКОЛА MQTT</p>
+		<p class="footer-end">11</p>
+        <figure>
+            <img class="cover" src="pictures/mt212.png">
+        </figure>
+		<style>
+			.large-ul {
+				font-size: 15px;
+			}
+			.small-ul {
+				font-size: 10px;
+			}
+            #slide_11 h2 {
+                color: white;
+				margin-top: 20px;
+				font-size: 44px;
+            }
+			#slide_11 ul li {
+				color: white;
+            }
+			#slide_11 ul li:before {
+                color: white;
+				padding-bottom: 50px;
+            }
+			.footer-start{
+                color: white;
+				font-size: 12px;
+				font-style: bold;
+				position: fixed;
+				bottom: 10px;
+				left: 60px;
+            }
+			.footer-middle {
+				color: white;
+				font-size: 10px;
+				display: flex; /* Используем flex-контейнер */
+				justify-content: center; /* Выравниваем по горизонтали по центру */
+				text-align: center;
+            }
+			.footer-end {
+                color: white;
+				font-size: 12px;
+				font-style: bold;
+				position: fixed;
+				bottom: 10px;
+				right: 60px;
+            }
+        </style>
+        <!-- Кружок с номером слайда -->
+        <!-- <div class="slide-number">1</div> -->
+    </section>
 
     <script src="node_modules/@shower/core/dist/shower.js"></script>
     <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+	
 
 </body>
 </html>
