@@ -45,7 +45,7 @@
 /* Number */
 
 .slide::after {
-	view: hidden;
+	visibility: hidden;
     position: absolute;
     top: 0;
     left: 875px;
